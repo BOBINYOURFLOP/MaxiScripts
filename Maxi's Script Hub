@@ -1,5 +1,17 @@
 -- Other Scripts Added Soon
 
+--BuildABoat
+function a()
 if game.PlaceId == 537413528 then
 loadstring(game:GetObjects("rbxassetid://7343121722")[1].Source)()
 end
+end
+
+--TowerOFHell
+function b()
+if game.PlaceId == 1962086868 then
+loadstring(game:GetObjects("rbxassetid://7343364038")[1].Source)()
+end
+end
+
+spawn(a) spawn(b)
