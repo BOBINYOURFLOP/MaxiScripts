@@ -1,5 +1,5 @@
 -- Other Scripts Added Soon
 
 if game.PlaceId == 537413528 then
-loadstring(game:GetObjects("rbxassetid://7342841659")[1].Source)()
+loadstring(game:GetObjects("rbxassetid://7343095147")[1].Source)()
 end
