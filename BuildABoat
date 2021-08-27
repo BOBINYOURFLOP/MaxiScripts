@@ -1,0 +1,593 @@
+local load = Instance.new("ScreenGui")
+local Script = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TrueOrFalse = Instance.new("ImageLabel")
+local TextButton2 = Instance.new("TextButton")
+local Frame_2 = Instance.new("ImageLabel")
+local TextButton_2 = Instance.new("TextButton")
+local Frame_3 = Instance.new("ImageLabel")
+local TextButton_3 = Instance.new("TextButton")
+local OtherFarms = Instance.new("ImageLabel")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TrueOrFalse2 = Instance.new("ImageLabel")
+local TrueOrFalse_2 = Instance.new("ImageLabel")
+local Frame_4 = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
+load.Name = "load"
+load.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+load.ResetOnSpawn = false
+
+Script.Name = "Script"
+Script.Parent = load
+Script.Enabled = false
+Script.ResetOnSpawn = false
+
+Frame.Name = "Frame"
+Frame.Parent = Script
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.399999976, 0, -4.65661287e-10, 0)
+Frame.Size = UDim2.new(0, 383, 0, 173)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.240208879, 0, 0.0578034669, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Gold Farmed : 0"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel.TextSize = 40.000
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.206266314, 0, 0.352601171, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Start OP FARM"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 40.000
+
+TrueOrFalse.Name = "TrueOrFalse"
+TrueOrFalse.Parent = Frame
+TrueOrFalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TrueOrFalse.BackgroundTransparency = 1.000
+TrueOrFalse.Position = UDim2.new(0.728459656, 0, 0.35260129, 0)
+TrueOrFalse.Size = UDim2.new(0, 13, 0, 50)
+TrueOrFalse.Visible = false
+TrueOrFalse.Image = "rbxassetid://3570695787"
+TrueOrFalse.ImageColor3 = Color3.fromRGB(0, 170, 0)
+TrueOrFalse.ScaleType = Enum.ScaleType.Slice
+TrueOrFalse.SliceCenter = Rect.new(100, 100, 100, 100)
+TrueOrFalse.SliceScale = 0.120
+
+TextButton2.Name = "TextButton2"
+TextButton2.Parent = Frame
+TextButton2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton2.BackgroundTransparency = 1.000
+TextButton2.Position = UDim2.new(0.240208879, 0, 0.64161849, 0)
+TextButton2.Size = UDim2.new(0, 200, 0, 50)
+TextButton2.Font = Enum.Font.SourceSans
+TextButton2.Text = "Reset Gold Farmed"
+TextButton2.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextButton2.TextSize = 40.000
+
+Frame_2.Name = "Frame"
+Frame_2.Parent = Script
+Frame_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.Position = UDim2.new(0.583333313, 0, 0, 0)
+Frame_2.Size = UDim2.new(0, 131, 0, 44)
+Frame_2.Image = "rbxassetid://3570695787"
+Frame_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.ScaleType = Enum.ScaleType.Slice
+Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_2.SliceScale = 0.120
+
+TextButton_2.Parent = Frame_2
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.Position = UDim2.new(0.236641228, 0, -0.0700000003, 0)
+TextButton_2.Size = UDim2.new(0, 99, 0, 47)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Close"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_2.TextSize = 50.000
+
+Frame_3.Name = "Frame"
+Frame_3.Parent = Script
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BackgroundTransparency = 1.000
+Frame_3.Position = UDim2.new(0.316666663, 0, 0, 0)
+Frame_3.Size = UDim2.new(0, 194, 0, 48)
+Frame_3.Image = "rbxassetid://3570695787"
+Frame_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.ScaleType = Enum.ScaleType.Slice
+Frame_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_3.SliceScale = 0.120
+
+TextButton_3.Parent = Frame_3
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BackgroundTransparency = 1.000
+TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "OtherFarms"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 40.000
+
+OtherFarms.Name = "OtherFarms"
+OtherFarms.Parent = Script
+OtherFarms.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OtherFarms.BackgroundTransparency = 1.000
+OtherFarms.Size = UDim2.new(0, 398, 0, 357)
+OtherFarms.Visible = false
+OtherFarms.Image = "rbxassetid://3570695787"
+OtherFarms.ImageColor3 = Color3.fromRGB(0, 0, 0)
+OtherFarms.ScaleType = Enum.ScaleType.Slice
+OtherFarms.SliceCenter = Rect.new(100, 100, 100, 100)
+OtherFarms.SliceScale = 0.120
+
+TextButton_4.Parent = OtherFarms
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.BackgroundTransparency = 1.000
+TextButton_4.Position = UDim2.new(0.0603015088, 0, 0.542168736, 0)
+TextButton_4.Size = UDim2.new(0, 318, 0, 102)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Chest Farm"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 40.000
+
+TextButton_5.Parent = OtherFarms
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.BackgroundTransparency = 1.000
+TextButton_5.Position = UDim2.new(0.0653266311, 0, 0.142772764, 0)
+TextButton_5.Size = UDim2.new(0, 319, 0, 101)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Normal Farm"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextSize = 40.000
+
+TrueOrFalse2.Name = "TrueOrFalse2"
+TrueOrFalse2.Parent = OtherFarms
+TrueOrFalse2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TrueOrFalse2.BackgroundTransparency = 1.000
+TrueOrFalse2.Position = UDim2.new(0.703334033, 0, 0.234954238, 0)
+TrueOrFalse2.Size = UDim2.new(0, 13, 0, 43)
+TrueOrFalse2.Visible = false
+TrueOrFalse2.Image = "rbxassetid://3570695787"
+TrueOrFalse2.ImageColor3 = Color3.fromRGB(0, 170, 0)
+TrueOrFalse2.ScaleType = Enum.ScaleType.Slice
+TrueOrFalse2.SliceCenter = Rect.new(100, 100, 100, 100)
+TrueOrFalse2.SliceScale = 0.120
+
+TrueOrFalse_2.Name = "TrueOrFalse"
+TrueOrFalse_2.Parent = OtherFarms
+TrueOrFalse_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TrueOrFalse_2.BackgroundTransparency = 1.000
+TrueOrFalse_2.Position = UDim2.new(0.703334033, 0, 0.632713318, 0)
+TrueOrFalse_2.Size = UDim2.new(0, 13, 0, 45)
+TrueOrFalse_2.Visible = false
+TrueOrFalse_2.Image = "rbxassetid://3570695787"
+TrueOrFalse_2.ImageColor3 = Color3.fromRGB(0, 170, 0)
+TrueOrFalse_2.ScaleType = Enum.ScaleType.Slice
+TrueOrFalse_2.SliceCenter = Rect.new(100, 100, 100, 100)
+TrueOrFalse_2.SliceScale = 0.120
+
+Frame_4.Name = "Frame"
+Frame_4.Parent = load
+Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_4.BackgroundTransparency = 1.000
+Frame_4.Position = UDim2.new(0.348958343, 0, 0.352989972, 0)
+Frame_4.Size = UDim2.new(0, 580, 0, 239)
+Frame_4.Image = "rbxassetid://3570695787"
+Frame_4.ImageColor3 = Color3.fromRGB(170, 0, 0)
+Frame_4.ScaleType = Enum.ScaleType.Slice
+Frame_4.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_4.SliceScale = 0.120
+
+TextLabel_2.Parent = Frame_4
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.308429122, 0, 0.152173907, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Script Made By Maxi"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 70.000
+
+TextLabel_3.Parent = Frame_4
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.308429122, 0, 0.513043463, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "BOBINYOURFLOP#3688"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 70.000
+
+-- Scripts:
+
+local function ONPZFHX_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	function Farmed()
+		Now = game:GetService("Players").Maxi1230111.Data.Gold.Value
+		Later = game:GetService("Players").Maxi1230111.Data.Gold.Value
+	while true do
+		wait()
+		Later = game:GetService("Players").Maxi1230111.Data.Gold.Value
+		GoldGetted = Later - Now
+		script.Parent.Text = "Gold Farmed : "..GoldGetted
+		end
+		
+	end
+	
+	function Reset()
+		script.Parent.Parent.TextButton2.MouseButton1Click:Connect(function()
+			spawn(Farmed)
+		end)
+	end
+	
+	spawn(Reset)
+	spawn(Farmed)
+end
+coroutine.wrap(ONPZFHX_fake_script)()
+local function OVKC_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	Farming = true
+	script.Parent.MouseButton1Click:Connect(function()
+		if Farming == true then
+			script.Parent.Parent.TrueOrFalse.Visible = true
+			FarmStart = true
+			wait(0.1)
+			spawn(Farm)
+			Farming = false
+		else
+			if Farming == false  then
+				script.Parent.Parent.TrueOrFalse.Visible = false
+				FarmStart = false
+				Farming =  true
+			end
+		end
+	end)
+	
+	FarmCompledet = 0
+	function Farm()
+		if FarmStart == true then
+			game:GetService("Workspace").Maxi1230111.Humanoid.HipHeight = 20
+			local CFrameEnd = CFrame.new(-54.936786651611, 75.205612182617, 1314.0385742188) -- Place your coords in here
+			local Time = 0 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-51.5656433, 65.0000458, 1369.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1) -- Place your coords in here
+			local Time = 1 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-47.252285003662, 64.975357055664, 2059.3923339844) -- Place your coords in here
+			local Time = 0 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-51.5656433, 65.0000458, 2139.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1) -- Place your coords in here
+			local Time = 1 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-51.892051696777, 64.998359680176, 2890.2260742188) -- Place your coords in here
+			local Time = 0 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-51.5656433, 65.0000458, 2909.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1) -- Place your coords in here
+			local Time = 1 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-47.795783996582, 60.072292327881, 3664.3210449219) -- Place your coords in here
+			local Time = 0 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-51.5656433, 65.0000458, 3679.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1) -- Place your coords in here
+			local Time = 1 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-67.701713562012, 54.123416900635, 4435.44921875) -- Place your coords in here
+			local Time = 0 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-51.5656433, 65.0000458, 4449.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1) -- Place your coords in here
+			local Time = 1 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-90.400787353516, 62.817714691162, 5205.970703125) -- Place your coords in here
+			local Time = 0 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-51.5656433, 65.0000458, 5219.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1) -- Place your coords in here
+			local Time = 1 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-68.228713989258, 75.151206970215, 5969.1943359375) -- Place your coords in here
+			local Time = 0 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-51.5656433, 65.0000458, 5989.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1) -- Place your coords in here
+			local Time = 1 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-54.908931732178, 61.507385253906, 6744.1635742188) -- Place your coords in here
+			local Time = 0 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-51.5656433, 65.0000458, 6759.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1) -- Place your coords in here
+			local Time = 1 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-66.566368103027, 44.531127929688, 7510.6337890625) -- Place your coords in here
+			local Time = 0 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-51.5656433, 65.0000458, 7529.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1) -- Place your coords in here
+			local Time = 1 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-45.073348999023, 44.531127929688, 8281.052734375) -- Place your coords in here
+			local Time = 0 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(0.2)
+			local CFrameEnd = CFrame.new(-51.5656433, 65.0000458, 8299.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1) -- Place your coords in here
+			local Time = 1 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(0.2)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(2)
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(11)
+			FarmCompledet += 1
+			print("Farm Compledet "..FarmCompledet.." Times!")
+			spawn(Farm)
+		end
+	end
+	
+	Timer = 0
+	function Timer()
+			while wait() do 
+			if FarmStart == true then
+				Timer = Timer + 1
+				script.Parent.Parent.Parent.Time.TextLabel.Text = "FarmTime : "..Timer
+			end
+		end
+	end
+	
+	
+	return Farm
+end
+coroutine.wrap(OVKC_fake_script)()
+local function FYVDSBC_fake_script() -- Script.LocalScript 
+	local script = Instance.new('LocalScript', Script)
+
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+end
+coroutine.wrap(FYVDSBC_fake_script)()
+local function FUZTBR_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.load:Destroy()
+	end)
+end
+coroutine.wrap(FUZTBR_fake_script)()
+local function BTQSCW_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	
+	Set = true
+	script.Parent.MouseButton1Click:Connect(function()
+		if Set == true then
+			script.Parent.Parent.Parent.OtherFarms.Visible = true
+			Set = false
+		else
+			if Set == false  then
+				script.Parent.Parent.Parent.OtherFarms.Visible = false
+				Set = true
+			end
+		end
+	end)
+end
+coroutine.wrap(BTQSCW_fake_script)()
+local function FIAFEYF_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	Farming = true
+	script.Parent.MouseButton1Click:Connect(function()
+		if Farming == true then
+			script.Parent.Parent.TrueOrFalse.Visible = true
+			FarmStart = true
+			wait(0.1)
+			spawn(Farm)
+			Farming = false
+		else
+			if Farming == false  then
+				script.Parent.Parent.TrueOrFalse.Visible = false
+				FarmStart = false
+				Farming =  true
+			end
+		end
+	end)
+	
+	FarmCompledetChest = 0
+	function Farm()
+		if FarmStart == true then
+			local CFrameEnd = CFrame.new(-75.643836975098, 45.473701477051, 2124.0078125) -- Place your coords in here
+			local Time = 2 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			wait(1)
+			local CFrameEnd = CFrame.new(-51.5656433, 65.0000458, 2139.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1) -- Place your coords in here
+			local Time = 4 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			wait(2)
+			local CFrameEnd = CFrame.new(-55.7065125, -358.739624, 9492.35645, 0, 0, -1, 0, 1, 0, 1, 0, 0) -- Place your coords in here
+			local Time = 0 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			wait(4)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(15)
+			FarmCompledetChest += 1
+			print("Farm Compledet "..FarmCompledetChest.." Times!")
+			spawn(Farm)
+		end
+	end
+end
+coroutine.wrap(FIAFEYF_fake_script)()
+local function DNAMU_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	Farming = true
+	script.Parent.MouseButton1Click:Connect(function()
+		if Farming == true then
+			script.Parent.Parent.TrueOrFalse2.Visible = true
+			FarmStart = true
+			wait(0.1)
+			spawn(Farm2)
+			Farming = false
+		else
+			if Farming == false  then
+				script.Parent.Parent.TrueOrFalse2.Visible = false
+				FarmStart = false
+				Farming =  true
+			end
+		end
+	end)
+	
+	FarmCompledetNormal = 0
+	function Farm2()
+		if FarmStart == true then
+			local CFrameEnd = CFrame.new(-54.936786651611, 75.205612182617, 1314.0385742188) -- Place your coords in here
+			local Time = 0 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			local CFrameEnd = CFrame.new(-54.211936950684, 75.125732421875, 8655.7119140625) -- Place your coords in here
+			local Time = 37 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			local CFrameEnd = CFrame.new(-57.774879455566, -358.12963867188, 9498.6650390625) -- Place your coords in here
+			local Time = 5 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait()
+			wait(4)
+			workspace.ClaimRiverResultsGold:FireServer()
+			wait(15)
+			FarmCompledetNormal += 1
+			print("Farm Compledet "..FarmCompledetNormal.." Times!")
+			spawn(Farm2)
+		end
+	end
+end
+coroutine.wrap(DNAMU_fake_script)()
+local function MGPYX_fake_script() -- load.LocalScript 
+	local script = Instance.new('LocalScript', load)
+
+	wait(5)
+	script.Parent.Frame:Destroy()
+	script.Parent.Script.Enabled = true
+end
+coroutine.wrap(MGPYX_fake_script)()
