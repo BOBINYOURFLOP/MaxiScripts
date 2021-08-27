@@ -14,4 +14,5 @@ loadstring(game:GetObjects("rbxassetid://7343364038")[1].Source)()
 end
 end
 
-spawn(a) spawn(b)
+spawn(a)
+spawn(b)
