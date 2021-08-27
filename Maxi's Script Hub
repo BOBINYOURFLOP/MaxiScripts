@@ -1,5 +1,4 @@
 -- Other Scripts Added Soon
-
 --BuildABoat
 function a()
 if game.PlaceId == 537413528 then
