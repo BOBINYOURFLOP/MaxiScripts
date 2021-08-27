@@ -31,6 +31,11 @@ local TrueOrFalse_2 = Instance.new("ImageLabel")
 local Frame_4 = Instance.new("ImageLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
+local Info = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextButton_6 = Instance.new("TextButton")
 
 --Properties:
 
@@ -232,9 +237,62 @@ TextLabel_3.Text = "BOBINYOURFLOP#3688"
 TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.TextSize = 70.000
 
+Info.Name = "Info"
+Info.Parent = load
+Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info.BackgroundTransparency = 1.000
+Info.Position = UDim2.new(0.867708325, 0, 0.737362623, 0)
+Info.Size = UDim2.new(0, 254, 0, 239)
+Info.Image = "rbxassetid://3570695787"
+Info.ImageColor3 = Color3.fromRGB(170, 0, 0)
+Info.ScaleType = Enum.ScaleType.Slice
+Info.SliceCenter = Rect.new(100, 100, 100, 100)
+Info.SliceScale = 0.120
+
+TextLabel_4.Parent = Info
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.106299214, 0, 0.138075307, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Dont Spam Click Farm"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 30.000
+
+TextLabel_5.Parent = Info
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.106299214, 0, 0.42259413, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Dont Start Other Farm"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextSize = 30.000
+
+TextLabel_6.Parent = Info
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.106299214, 0, 0.518828452, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "when 1 Farm is On"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextSize = 30.000
+
+TextButton_6.Parent = Info
+TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.BackgroundTransparency = 0.250
+TextButton_6.Position = UDim2.new(0.14173229, 0, -0.209205016, 0)
+TextButton_6.Size = UDim2.new(0, 200, 0, 50)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "Close"
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextSize = 40.000
+TextButton_6.TextWrapped = true
+
 -- Scripts:
 
-local function XNBRID_fake_script() -- TextLabel.LocalScript 
+local function QKRQI_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	function Farmed()
@@ -258,8 +316,8 @@ local function XNBRID_fake_script() -- TextLabel.LocalScript
 	spawn(Reset)
 	spawn(Farmed)
 end
-coroutine.wrap(XNBRID_fake_script)()
-local function BYUFNNB_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(QKRQI_fake_script)()
+local function RVHB_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	Farming = true
@@ -454,8 +512,8 @@ local function BYUFNNB_fake_script() -- TextButton.LocalScript
 	
 	return FarmOP
 end
-coroutine.wrap(BYUFNNB_fake_script)()
-local function XNFESBW_fake_script() -- Script.LocalScript 
+coroutine.wrap(RVHB_fake_script)()
+local function PSQHSCJ_fake_script() -- Script.LocalScript 
 	local script = Instance.new('LocalScript', Script)
 
 	local vu = game:GetService("VirtualUser")
@@ -465,16 +523,16 @@ local function XNFESBW_fake_script() -- Script.LocalScript
 		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 	end)
 end
-coroutine.wrap(XNFESBW_fake_script)()
-local function ZMIZB_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(PSQHSCJ_fake_script)()
+local function TTZQGAT_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent.load:Destroy()
 	end)
 end
-coroutine.wrap(ZMIZB_fake_script)()
-local function SCBL_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(TTZQGAT_fake_script)()
+local function TFOVYR_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	
@@ -491,8 +549,8 @@ local function SCBL_fake_script() -- TextButton_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SCBL_fake_script)()
-local function KFKWL_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(TFOVYR_fake_script)()
+local function ZVOO_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	Farming = true
@@ -538,8 +596,8 @@ local function KFKWL_fake_script() -- TextButton_4.LocalScript
 		end
 	end
 end
-coroutine.wrap(KFKWL_fake_script)()
-local function BSDIP_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(ZVOO_fake_script)()
+local function XSTL_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	Farming = true
@@ -586,12 +644,20 @@ local function BSDIP_fake_script() -- TextButton_5.LocalScript
 		end
 	end
 end
-coroutine.wrap(BSDIP_fake_script)()
-local function CZKDIRB_fake_script() -- load.LocalScript 
+coroutine.wrap(XSTL_fake_script)()
+local function VMNOZ_fake_script() -- load.LocalScript 
 	local script = Instance.new('LocalScript', load)
 
 	wait(5)
 	script.Parent.Frame:Destroy()
 	script.Parent.Script.Enabled = true
 end
-coroutine.wrap(CZKDIRB_fake_script)()
+coroutine.wrap(VMNOZ_fake_script)()
+local function VTKYVRD_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Info:Destroy()
+	end)
+end
+coroutine.wrap(VTKYVRD_fake_script)()
