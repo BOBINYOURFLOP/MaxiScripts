@@ -1,4 +1,4 @@
-
+-- Other Scripts Added Soon
 
 if game.PlaceId == 537413528 then
 loadstring(game:GetObjects("rbxassetid://7342841659")[1].Source)()
