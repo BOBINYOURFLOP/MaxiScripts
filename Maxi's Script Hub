@@ -19,9 +19,13 @@ loadstring(game:GetObjects("rbxassetid://7343364038")[1].Source)()
 end
 if game.PlaceId == 3582763398 then
 loadstring(game:GetObjects("rbxassetid://7343364038")[1].Source)()
+end
+
+
+--SpeedManSimulator
+if game.PlaceId == 7065731541 then
+loadstring(game:GetObjects("rbxassetid://7358183027")[1].Source)()
+end
 
 --Others
-end
-end
-
 spawn(a)
