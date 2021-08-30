@@ -20,7 +20,7 @@
 --]]
 function a()
 if LoadGui == true then
-loadstring(game:GetObjects("rbxassetid://7367436328")[1].Source)()
+loadstring(game:GetObjects("rbxassetid://7368044271")[1].Source)()
 end
 end
 
